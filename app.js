@@ -5,6 +5,7 @@ let longitude
 
 // Open (or create) a database
 const request = window.indexedDB.open('moodTracker', 8)
+// test
 
 // Handle database upgrades (e.g., create object store)
 request.onupgradeneeded = function (event) {
