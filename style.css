@@ -1,3 +1,9 @@
+:root {
+    --background-color:#f5f5f5;
+    --icon-color:#808080;
+    --white:#fff;
+}
+
 html,
 body {
     height: 100%;
@@ -7,16 +13,16 @@ body {
 .wrapper {
     height: 100%;
     width: 100%;
-    background-color: #f5f5f5;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    background-color: var(--background-color);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    place-items: center;
     gap: 3rem;
 }
 
 svg {
     filter: grayscale(1);
+    transition: filter 0.5s ease;
 }
 
 svg:hover {
@@ -25,7 +31,8 @@ svg:hover {
 }
 
 #export-data > i {
-    color: gray;
+    color: var(--icon-color);
+    transition: color 0.5s ease;
 }
 
 #export-data > i:hover {
@@ -34,22 +41,22 @@ svg:hover {
 }
 
 #toast {
-    visibility: hidden;
-    position: fixed;
-    z-index: 1;
-    left: 50%;
-    bottom: 20vh;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 20px;
-    color: #808080;
-    text-align: center;
-    border-radius: 0.5rem;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    width: 4rem;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    bottom: 20vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 20px;
+    color: var(--icon-color);
+    display: flex;
     height: 4rem;
+    justify-content: center;
+    left: 50%;
     margin-left: -2rem;
+    position: fixed;
+    text-align: center;
+    visibility: hidden;
+    width: 4rem;
+    z-index: 1;
 }
 
 #toast.show {
