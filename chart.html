@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hello Bulma!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://kit.fontawesome.com/cc4f88d5dd.js" crossorigin="anonymous"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+
+<body>
+  <div class="full-screen-div">
+    <!-- <canvas id="myChart"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <div id="container-total-mood" style="width: 100%; height: 400px"></div>
+
+    <script type="module">
+      function groupedData(data) {
+        const nData = data.reduce((acc, current) => {
+          const date = current.time[0];
+
+          // If the date doesn't exist in the accumulator, initialize it as an array
+          if (!acc[date]) {
+            acc[date] = [];
+          }
+
+          // Push the current entry into the array for this date
+          acc[date].push(current);
+
+          return acc;
+        }, {});
+        return nData;
+      }
+
+      function manipulateData(data) {
+        //console.log(data);
+        const m = data.map((d) => {
+          console.log(d);
+          return {
+            mood: Number(d.mood),
+            time: d.time,
+            temparature: Math.floor(d?.weather?.main.temp),
+            weather: d?.weather?.weather[0].id,
+            weatherDescription:
+              d?.weather?.weather[0].description,
+            sunrise: d?.weather?.sys.sunrise,
+            sunset: d?.weather?.sys.sunset,
+          };
+        });
+        return m;
+      }
+
+      function countKeys(data) {
+        const moodCount = {};
+
+        data.forEach((mood) => {
+          if (moodCount[mood]) {
+            moodCount[mood]++;
+          } else {
+            moodCount[mood] = 1;
+          }
+        });
+
+        return moodCount;
+      }
+
+      fetch("./export.json")
+        .then((response) => response.json())
+        .then((json) => {
+          //console.log(json);
+
+          const clearData = manipulateData(json);
+          //console.log(clearData);
+          const group = groupedData(clearData);
+          //console.log(group);
+
+          const count = countKeys(
+            json.map((d) => Number(d.mood)),
+          );
+          console.log(count);
+
+          let series = [];
+          for (const key in count) {
+            //console.log(key, group[key]);
+            series.push(Number(count[key]));
+          }
+
+          const chart = Highcharts.chart("container-total-mood", {
+            chart: {
+              type: "bar",
+            },
+            title: {
+              text: "Mood",
+            },
+            xAxis: {
+              categories: [
+                "Bad",
+                "Neutral",
+                "Happy",
+                "Awesome",
+              ],
+            },
+            yAxis: {
+              title: {
+                text: "Total",
+              },
+            },
+            series: [
+              {
+                name: "Moods Total",
+                data: series,
+              },
+            ],
+          });
+        })
+        .catch((error) => console.error("Error:", error));
+    </script>
+  </div>
+</body>
+
+</html>
