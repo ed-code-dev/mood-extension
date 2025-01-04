@@ -25,33 +25,32 @@
         .then(json => {
           console.log(json)
           const data = json
-          
+
           // X-Achse: Kombiniertes Datum und Wochentag
           // const labels = data.map(item => `${item.time[0]} (${item.time[2]})`);
           //const labels = data.map(item => `${item.time[2].trimStart()}`);
-          const labels = ['Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+          const labels = ['1', '2', '3', '4'];
 
           const groupedData = [
-            { data: {day:'Saturday', items: []}},
-            { data: {day:'Sunday', items:  [] } },
-            { data: {day:'Monday', items:  [] }},
-            { data: {day:'Tuesday', items:  [] }},
-            { data: {day:'Wednesday', items:  [] }},
-            { data: {day:'Thursday', items:  [] }},
-            { data: {day:'Friday',items: [] }}
+            { data: { mood: '1', day: 'Saturday', items: [] } },
+            { data: { mood: '2', day: 'Sunday', items: [] } },
+            { data: { mood: '3', day: 'Monday', items: [] } },
+            { data: { mood: '4', day: 'Tuesday', items: [] } },
+            // { data: { mood: '4', day: 'Wednesday', items: [] } },
+            // { data: {mood: '',day:'Thursday', items:  [] }},
+            // { data: {mood: '',day:'Friday',items: [] }}
           ]
-          
+
           // Y-Achse: Stimmung (Mood)
           const moodData = data.forEach(item => {
             const day = item.time[2].trimStart()
-            const dayObject = groupedData.find(item => item.data.day === day).data;
-            const label = `Dataset ${day}`
+            const dayObject = groupedData.find(d => d.data.mood === item.mood).data;
+            const label = `Dataset ${item.mood}`
             const borderColor = 'rgba(75, 192, 192, 1)'
             const backgroundColor = 'rgba(75, 192, 192, 0.2)'
             const stack = `Stack ${day}`
-            const data = { day, label, borderColor, backgroundColor, stack }
+            const data = { day, mood: item.mood, label, borderColor, backgroundColor, stack }
             dayObject.items.push(data)
-            dayObject['mood'] = item.mood
           });
           // const moodData = data.map(item => {
           //   const day = item.time[2].trimStart()
@@ -97,7 +96,7 @@
               },
               scales: {
                 y: {
-                  stack:true,
+                  stack: true,
                   // beginAtZero: true,
                   // max: 5,
                   // title: {
@@ -106,7 +105,7 @@
                   // }
                 },
                 x: {
-                  stack:true,
+                  stack: true,
                   // title: {
                   //   display: true,
                   //   text: 'Day of Week'
