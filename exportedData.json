@@ -1,0 +1,434 @@
+[
+  {
+    "mood": "1",
+    "time": [
+      "4.1.2025",
+      " 09:01:22",
+      " Saturday"
+    ],
+    "weather": {
+      "coord": {
+        "lon": 9.5654,
+        "lat": 47.4672
+      },
+      "weather": [
+        {
+          "id": 802,
+          "main": "Clouds",
+          "description": "scattered clouds",
+          "icon": "03d"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": -5.14,
+        "feels_like": -8.53,
+        "temp_min": -6.08,
+        "temp_max": -4.36,
+        "pressure": 1026,
+        "humidity": 100,
+        "sea_level": 1026,
+        "grnd_level": 954
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 2.06,
+        "deg": 110
+      },
+      "clouds": {
+        "all": 40
+      },
+      "dt": 1735977592,
+      "sys": {
+        "type": 1,
+        "id": 6944,
+        "country": "CH",
+        "sunrise": 1735974547,
+        "sunset": 1736005436
+      },
+      "timezone": 3600,
+      "id": 2661592,
+      "name": "Buriet",
+      "cod": 200
+    },
+    "id": 13
+  },
+  {
+    "mood": "2",
+    "time": [
+      "4.1.2025",
+      " 09:01:27",
+      " Saturday"
+    ],
+    "weather": {
+      "coord": {
+        "lon": 9.5654,
+        "lat": 47.4672
+      },
+      "weather": [
+        {
+          "id": 802,
+          "main": "Clouds",
+          "description": "scattered clouds",
+          "icon": "03d"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": -5.14,
+        "feels_like": -8.53,
+        "temp_min": -6.08,
+        "temp_max": -4.36,
+        "pressure": 1026,
+        "humidity": 100,
+        "sea_level": 1026,
+        "grnd_level": 954
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 2.06,
+        "deg": 110
+      },
+      "clouds": {
+        "all": 40
+      },
+      "dt": 1735977592,
+      "sys": {
+        "type": 1,
+        "id": 6944,
+        "country": "CH",
+        "sunrise": 1735974547,
+        "sunset": 1736005436
+      },
+      "timezone": 3600,
+      "id": 2661592,
+      "name": "Buriet",
+      "cod": 200
+    },
+    "id": 14
+  },
+  {
+    "mood": "3",
+    "time": [
+      "4.1.2025",
+      " 09:01:28",
+      " Friday"
+    ],
+    "weather": {
+      "coord": {
+        "lon": 9.5654,
+        "lat": 47.4672
+      },
+      "weather": [
+        {
+          "id": 802,
+          "main": "Clouds",
+          "description": "scattered clouds",
+          "icon": "03d"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": -5.14,
+        "feels_like": -8.53,
+        "temp_min": -6.08,
+        "temp_max": -4.36,
+        "pressure": 1026,
+        "humidity": 100,
+        "sea_level": 1026,
+        "grnd_level": 954
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 2.06,
+        "deg": 110
+      },
+      "clouds": {
+        "all": 40
+      },
+      "dt": 1735977592,
+      "sys": {
+        "type": 1,
+        "id": 6944,
+        "country": "CH",
+        "sunrise": 1735974547,
+        "sunset": 1736005436
+      },
+      "timezone": 3600,
+      "id": 2661592,
+      "name": "Buriet",
+      "cod": 200
+    },
+    "id": 15
+  },
+  {
+    "mood": "4",
+    "time": [
+      "4.1.2025",
+      " 09:01:28",
+      " Sunday"
+    ],
+    "weather": {
+      "coord": {
+        "lon": 9.5654,
+        "lat": 47.4672
+      },
+      "weather": [
+        {
+          "id": 802,
+          "main": "Clouds",
+          "description": "scattered clouds",
+          "icon": "03d"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": -5.14,
+        "feels_like": -8.53,
+        "temp_min": -6.08,
+        "temp_max": -4.36,
+        "pressure": 1026,
+        "humidity": 100,
+        "sea_level": 1026,
+        "grnd_level": 954
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 2.06,
+        "deg": 110
+      },
+      "clouds": {
+        "all": 40
+      },
+      "dt": 1735977592,
+      "sys": {
+        "type": 1,
+        "id": 6944,
+        "country": "CH",
+        "sunrise": 1735974547,
+        "sunset": 1736005436
+      },
+      "timezone": 3600,
+      "id": 2661592,
+      "name": "Buriet",
+      "cod": 200
+    },
+    "id": 16
+  },
+  {
+    "mood": "2",
+    "time": [
+      "4.1.2025",
+      " 09:07:19",
+      " Saturday"
+    ],
+    "weather": {
+      "coord": {
+        "lon": 9.5654,
+        "lat": 47.4672
+      },
+      "weather": [
+        {
+          "id": 802,
+          "main": "Clouds",
+          "description": "scattered clouds",
+          "icon": "03d"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": -5.14,
+        "feels_like": -8.53,
+        "temp_min": -6.08,
+        "temp_max": -4.36,
+        "pressure": 1026,
+        "humidity": 100,
+        "sea_level": 1026,
+        "grnd_level": 954
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 2.06,
+        "deg": 110
+      },
+      "clouds": {
+        "all": 40
+      },
+      "dt": 1735977592,
+      "sys": {
+        "type": 1,
+        "id": 6944,
+        "country": "CH",
+        "sunrise": 1735974547,
+        "sunset": 1736005436
+      },
+      "timezone": 3600,
+      "id": 2661592,
+      "name": "Buriet",
+      "cod": 200
+    },
+    "id": 17
+  },
+  {
+    "mood": "4",
+    "time": [
+      "4.1.2025",
+      " 09:07:20",
+      " Saturday"
+    ],
+    "weather": {
+      "coord": {
+        "lon": 9.5654,
+        "lat": 47.4672
+      },
+      "weather": [
+        {
+          "id": 802,
+          "main": "Clouds",
+          "description": "scattered clouds",
+          "icon": "03d"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": -5.14,
+        "feels_like": -8.53,
+        "temp_min": -6.08,
+        "temp_max": -4.36,
+        "pressure": 1026,
+        "humidity": 100,
+        "sea_level": 1026,
+        "grnd_level": 954
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 2.06,
+        "deg": 110
+      },
+      "clouds": {
+        "all": 40
+      },
+      "dt": 1735977592,
+      "sys": {
+        "type": 1,
+        "id": 6944,
+        "country": "CH",
+        "sunrise": 1735974547,
+        "sunset": 1736005436
+      },
+      "timezone": 3600,
+      "id": 2661592,
+      "name": "Buriet",
+      "cod": 200
+    },
+    "id": 18
+  },
+  {
+    "mood": "3",
+    "time": [
+      "4.1.2025",
+      " 09:07:20",
+      " Wednesday"
+    ],
+    "weather": {
+      "coord": {
+        "lon": 9.5654,
+        "lat": 47.4672
+      },
+      "weather": [
+        {
+          "id": 802,
+          "main": "Clouds",
+          "description": "scattered clouds",
+          "icon": "03d"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": -5.14,
+        "feels_like": -8.53,
+        "temp_min": -6.08,
+        "temp_max": -4.36,
+        "pressure": 1026,
+        "humidity": 100,
+        "sea_level": 1026,
+        "grnd_level": 954
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 2.06,
+        "deg": 110
+      },
+      "clouds": {
+        "all": 40
+      },
+      "dt": 1735977592,
+      "sys": {
+        "type": 1,
+        "id": 6944,
+        "country": "CH",
+        "sunrise": 1735974547,
+        "sunset": 1736005436
+      },
+      "timezone": 3600,
+      "id": 2661592,
+      "name": "Buriet",
+      "cod": 200
+    },
+    "id": 19
+  },
+  {
+    "mood": "1",
+    "time": [
+      "4.1.2025",
+      " 09:07:21",
+      " Saturday"
+    ],
+    "weather": {
+      "coord": {
+        "lon": 9.5654,
+        "lat": 47.4672
+      },
+      "weather": [
+        {
+          "id": 802,
+          "main": "Clouds",
+          "description": "scattered clouds",
+          "icon": "03d"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": -5.14,
+        "feels_like": -8.53,
+        "temp_min": -6.08,
+        "temp_max": -4.36,
+        "pressure": 1026,
+        "humidity": 100,
+        "sea_level": 1026,
+        "grnd_level": 954
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 2.06,
+        "deg": 110
+      },
+      "clouds": {
+        "all": 40
+      },
+      "dt": 1735977592,
+      "sys": {
+        "type": 1,
+        "id": 6944,
+        "country": "CH",
+        "sunrise": 1735974547,
+        "sunset": 1736005436
+      },
+      "timezone": 3600,
+      "id": 2661592,
+      "name": "Buriet",
+      "cod": 200
+    },
+    "id": 20
+  }
+]

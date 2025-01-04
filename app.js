@@ -142,8 +142,27 @@ document.getElementById('export-data').addEventListener('click', function () {
 
 function showCurrentTime () {
   const currentTime = new Date()
-  const weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][currentTime.getDay()]
-  const nD = currentTime.toLocaleString('default', { weekday: 'long' }) + ', ' + weekday
+  const currentTimeToDisplay = currentTime.toLocaleString({
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: 'numeric'
+  })
+
+  const getWeekday = (date) =>
+    [
+      'Sunday',
+      'Monday',
+      'Tuesday',
+      'Wednesday',
+      'Thursday',
+      'Friday',
+      'Saturday'
+    ][date.getDay()]
+
+  const nD = currentTimeToDisplay + ', ' + getWeekday(currentTime)
   return nD.split(',')
 }
 
